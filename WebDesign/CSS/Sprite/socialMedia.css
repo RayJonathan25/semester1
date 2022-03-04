@@ -1,0 +1,89 @@
+    ul {
+        list-style-type: none;
+        float: left;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        color: white;
+    }
+
+    li {
+        color: rgb(241, 221, 163);
+        font-size: 20px;
+    }
+
+    body {
+        background-color: #262626;
+    }
+
+    ul.menu li a {
+        height: 50px;
+        line-height: 50px;
+        padding-left: 60px;
+        background-color: green;
+        display: inline-block;
+    }
+
+    ul.menu li {
+        display: inline-block;
+    }
+
+    .facebook a {
+        background: url(assets/image/social.jpg)-6px -3px;
+    }
+
+
+    .linkedin a {
+
+        background: url(Asset/images/social.jpg)-202px -3px;
+
+    }
+
+    .twitter a {
+
+        background: url(Asset/images/social.jpg)-72px -3px
+    }
+
+    .youtube a {
+        background: url(Asset/images/social.jpg)-521px -3px
+    }
+
+    /*hover*/
+    .facebook a:hover {
+
+        background: url(Asset/images/social.jpg)-6px -66px;
+    }
+
+
+    .linkedin a:hover {
+
+        background: url(Asset/images/social.jpg)-202px -66px;
+
+    }
+
+    .twitter a:hover {
+
+        background: url(Asset/images/social.jpg)-72px -66px
+    }
+
+    .youtube a:hover {
+        background: url(Asset/images/social.jpg)-521px -66px
+    }
+
+    #navlist {
+        positiong: relative;
+    }
+
+    #navlist li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: absolute;
+        top: 0;
+    }
+
+    #navlist li, #navlist a {
+        height: 44px;
+        display: block;
+    }

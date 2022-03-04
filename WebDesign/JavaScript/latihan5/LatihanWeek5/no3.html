@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <style>
+        h1 {
+            text-align: center;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ButtonLine">
+        <button id="moveup">Move Up</button>
+        <button id="movedown">Move Down</button>
+        <button id="addcolor">Add Color</button>
+        <button id="diseapear">Disapear/Reaper</button>
+    </div>
+
+    <h1>Make Me Do Stuff!!</h1>
+
+    <script>
+        $('#moveup').click(function () {
+            $('h1').animate({ top: "-=50px" })
+        })
+
+        $('#movedown').click(function () {
+            $('h1').animate({ top: "+=50px" })
+        })
+
+        $('#addcolor').click(function () {
+            $('h1').css('color', 'blue')
+        })
+
+        $('#diseapear').click(function () {
+            $('h1').fadeToggle()
+        })
+
+
+    </script>
+
+</body>
+
+</html>

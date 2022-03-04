@@ -1,0 +1,27 @@
+    <script>
+        //nomor 1
+	window.alert("Hello World");
+        //nomor 2
+        let inputNumber = prompt("Input number here");
+        window.alert("Your number is : " + inputNumber)
+
+             =====Data untuk nomor 3,4,5=====
+
+        let number1 = prompt("Input first Number : ");
+        let number2 = prompt("Input second Number : ");
+             
+             =================================
+
+        //nomor 3
+        let hasilPerkalian = number1 * number2;
+        window.alert("Hasil perkalian dari First Number dan Second Number adalah : " + hasilPerkalian)
+
+        //nomor 4
+        window.alert("Hasil penjumlahan dari First Number dan Second Number adalah : " + hasilPenjumlahan)
+        let hasilPenjumlahan = parseInt(number1) + parseInt(number2);
+
+        //nomor 5        
+        if (number1 < number2) {
+            window.alert(number2 + " Lebih besar dari " + number1);
+        } else { window.alert(number2 + " Lebih kecil dari " + number1) }
+</script>

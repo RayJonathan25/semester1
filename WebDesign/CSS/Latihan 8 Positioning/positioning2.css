@@ -1,0 +1,19 @@
+h1,h3,p{color:#80171C
+;}
+
+.position-1{
+	float:left;
+  width:32%;
+  margin-right:10px;
+}
+
+.position-2{
+	float:left;
+	width:20%;
+	font-size:20px;
+	font-style:italic;
+	border-bottom:solid 1px;
+}
+
+.clear{clear:left;
+		width:50%;}

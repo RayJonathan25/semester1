@@ -1,0 +1,24 @@
+
+body{text-align:center;
+    font-family:Vollkorn;}
+
+h3{background-color:#cecece;}
+.backgroundPutih{background-color: white;}
+
+h3:hover{background-color: aqua;}
+
+.card {
+    float:left;
+    padding:3px;
+    display:inline-block;
+    width:500px;
+}
+
+.card:hover {
+    }
+
+.container {
+padding: 2px 16px;}	
+
+button{border:none;}
+

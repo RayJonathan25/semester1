@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: skyblue;
+}
+
+.box {
+  transition: all 0.45s;
+}
+
+.box:hover {
+  padding-left: 275px;
+}
+
+.box::before {
+  content: "Top Running Collections";
+  transition: all 0.25s ease-in;
+  text-transform: uppercase;
+  position: absolute;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 79.5vw;
+  font-family:Arial Black;
+}
+
+.box:hover .box::before {
+  margin-left: 100%;
+}
+
+.menu {
+  transition: all 0.45s ease-in;
+  height: 100%;
+  width: 255px;
+  background-color: skyblue;
+  padding: 0 14px;
+  position: absolute;
+  margin-left: -285px;
+}
+
+.caption h4 {
+  font-size: 30px;
+  margin-right: 30px;
+}
+
+.caption h5 {
+  font-size: 20px;
+}
+
+.caption li {
+  list-style-type: none;
+}
+
+.caption li:hover {
+  list-style-type: none;
+  margin-left:10px;
+  
+}
+
+.caption li a {
+  text-decoration: none;
+  color: black;
+}
+
+.box img {
+  width: 100vw;
+  height: 100vh;
+}

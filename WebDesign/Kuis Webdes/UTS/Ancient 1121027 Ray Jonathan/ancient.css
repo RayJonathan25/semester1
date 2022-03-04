@@ -1,0 +1,30 @@
+body{
+		background:#E2D7AA;
+		padding:20px;
+		text-align:center;
+}
+nav {
+  background-color:#E2D7AA;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+h1{font-family:sans-serif;}
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;	
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+
+a:active {
+  color: #0a2d4a;
+  font-weight:bold;
+}

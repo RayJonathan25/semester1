@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<head>
+	<title>Soal no 1 </title>
+		<style>
+		.foto{
+				height:250px;
+				width:250px;
+			}
+	

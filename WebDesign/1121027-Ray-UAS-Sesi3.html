@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="countdown">
+
+
+        <input type="text" id="hari" value="tanggal (1-31)" />
+        <input type="text" id="Bulan" value="Bulan(1-12)" />
+        <input type="text" id="Tahun" value="tahun" />
+        <input type="text" id="Jam" value="Jam(1-24)" />
+        <input type="text" id="Menit" value="Menit(1-60)" />
+        <input type="text" id="Detik" value="Detik(1-60)" />
+
+        <button id="mulaiCountDown" onclick="mulaiCountDown();">Submit</button>
+        <div id="display"></div>
+    </div>
+    <script>
+        function mulaiCountDown() {
+            var countdown = setInterval('timer()', 1000);
+        }
+
+        function timer() {
+            var Tahun = parseInt(document.getElementById("Tahun").value, 0);
+            var Bulan = parseInt(document.getElementById("Bulan").value, 0);
+            var Hari = parseInt(document.getElementById("hari").value, 0);
+            var Jam = parseInt(document.getElementById("Jam").value, 0);
+            var Menit = parseInt(document.getElementById("Menit").value, 0);
+            var Detik = parseInt(document.getElementById("Detik").value, 0);
+
+            var waktuSekarang = new Date();
+            var tanggalSekarang = waktuSekarang.getTime();
+            pembagianTahun = waktuSekarang.setDate(waktuSekarang.getDate() + Tahun);
+            pembagianBulan = waktuSekarang.setDate(waktuSekarang.getDate() + Bulan);
+            pembagianHari = waktuSekarang.setDate(waktuSekarang.getDate() + Hari);
+            pembagianJam = waktuSekarang.setHours(waktuSekarang.getHours() + Jam);
+            pembagianMenit = waktuSekarang.setMinutes(waktuSekarang.getMinutes() + Menit);
+            pembagianDetik = waktuSekarang.setSeconds(waktuSekarang.getSeconds() + Detik);
+
+            var then = new Date(pembagianJam + pembagianMenit + pembagianDetik);
+
+            if (Hari > 0 || Jam > 0 || Menit > 0 || Detik > 0 || Tahun > 0 || Bulan > 0) {
+                var total = then - tanggalSekarang;
+                var hariHari = Math.floor(total / (1000 * 60 * 60 * 24));
+                var jamJam = Math.floor((total / (1000 * 60 * 60)) % 24);
+                var menitMenit = Math.floor((total / 1000 / 60) % 60);
+                var detikDetik = Math.floor((total / 1000) % 60);
+                document.getElementById("display").innerHTML = "Waktu: " + hariHari + "  Hari     " + jamJam + "  Jam " + menitMenit + "  Menit " + detikDetik + "S";
+
+
+                if (total < 0) {
+                    clearInterval(countdown);
+                    document.getElementById("message").innerHTML = "sudah selesai";
+                }
+            } else {
+                document.getElementById("display").innerHTML = " ";
+                document.getElementById("message").innerHTML = "Perhitungan belum dimulai";
+            }
+        }
+    </script>
+</body>
+
+</html>

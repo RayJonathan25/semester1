@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No 2</title>
+</head>
+
+<body>
+    <p>Dialog box which will ask your favorite number</p>
+    <button onclick="favoriteNumber()">Try it!</button>
+    <span id="result"></span>
+    <script>
+        function favoriteNumber() {
+            let input = prompt("What is your favorite number  ?")
+            if (input == 1) {
+                window.alert("Well yeah number one!!")
+            } else if (input == 3) {
+                window.alert("It's my favorite number too!")
+            } else if (input == 100) {
+                window.alert("Wow what a high number!")
+            } else {
+                window.alert("I have never heard of that one... :(")
+            }
+        }
+
+    </script>
+</body>
+
+
+</html>

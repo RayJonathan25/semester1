@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css?family=Anton");
+
+img {
+    width: 450px;
+    background-image: linear-gradient(180deg, #6afdc9, rgb(69, 220, 215));
+    height: 550px;
+}
+
+body {
+    display: flex;
+    border: solid black;
+}
+
+
+.header {
+
+    font-family: "Anton";
+    font-weight: bold;
+}
+
+.content {
+    font-family: "Arial";
+    padding-left: 20px;
+    width: 500px;
+}
+
+.input1 input {
+    background-color: rgb(55, 164, 127);
+    color: white;
+    border: 2px solid aquamarine;
+}
+
+.input1 select {
+    background-color: rgb(23, 100, 29);
+    color: white;
+}
+
+.input2 input {
+
+    color: white;
+    border-top-style: none;
+
+    border-bottom-style: 2px solid rgb(28, 171, 187);
+
+    border-right-style: none;
+
+    border-left-style: none;
+}
+
+button {
+    width: 150px;
+    height: 25px;
+    border: 2px solid #42C9CA;
+    border-radius: 20px;
+    background-color: #70D6D7;
+    color: white;
+}

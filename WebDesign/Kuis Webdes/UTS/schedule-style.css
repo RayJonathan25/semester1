@@ -1,0 +1,25 @@
+body{background-color:#D4ECDD;
+	color:#666;
+	font-family:Arial,Verdana,Sans-serif;
+}
+
+ul {
+  list-style-image: url('icon-plus.PNG');
+}
+
+tr:nth-child(2n+3){
+	background:#e8eff5;}
+	
+tr:nth-child(2n+2){	
+	background:#e0e9f0;
+}
+
+table{border-collapse:collapse;}
+
+td{border:1px solid #749abe;}
+
+th{background-color:#90b4d6;
+	border:1px solid #749abe;
+	border-bottom:2px solid #547ca0;
+	color:white;
+	 text-shadow: 1px 1px #2f389a}

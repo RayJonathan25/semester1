@@ -1,0 +1,42 @@
+form {
+    padding: 10px 20px;
+}
+
+.left-contact {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    background-color: blue;
+}
+
+.right-contact {
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+    background-color: green;
+}
+
+.button-contact {
+    clear: both;
+    width: 100%;
+    margin: 30px 0 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+
+@media screen and (max-width: 800px) {
+    form {
+        max-width: calc(100% - 40px);
+    }
+}
+
+@media screen and (max-width: 660px) {
+
+    .left-contact,
+    .right-contact {
+        background-color: aliceblue;
+        width: 100%;
+    }
+
+}

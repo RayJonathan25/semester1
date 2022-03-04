@@ -1,0 +1,66 @@
+body {
+  color: brown;
+  font-size: 20px;
+}
+
+.bg-grey {
+  background-color: #efefef;
+}
+
+.container {
+  padding: 0 5%;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+nav {
+  text-align: center;
+  padding: 15px;
+}
+
+nav ul li {
+  display: inline-block;
+  font-size: 25px;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #665544;
+}
+
+.feature {
+  height: 200px;
+}
+
+.feature p {
+  font-size: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.col {
+  margin: 15px 0;
+}
+
+.col .section {
+  width: 30.3%;
+  float: left;
+  height: 150px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.col :nth-child(2n) {
+  margin: 0 39.3px;
+}
+
+footer {
+  clear: both;
+  margin-top: 10px;
+  padding: 20px;
+}

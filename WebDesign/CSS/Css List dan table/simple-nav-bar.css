@@ -1,0 +1,30 @@
+
+body{font-family: Georgia;
+}
+
+nav {
+  background-color:#A09F57;
+  text-align: center;
+  padding: 10px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #EADEB8;
+  background-color: #A09F57;
+  font-size: 50px;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+nav li a:hover {
+  text-decoration: none;
+  color: #C56824;
+  background-color: #EADEB8;
+}
+

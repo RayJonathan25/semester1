@@ -1,0 +1,27 @@
+body{background-color:#1D211E;}
+
+nav {
+  box-sizing: content-box;
+  background-color: #E67C1f;
+  padding: 20px 0;
+  margin-bottom:20px;
+  display:flex;
+  justify-content:center;
+} 
+
+li{color:white;}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}	
+
+ nav ul li :hover,.Active{
+		color:blue;}
+
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}

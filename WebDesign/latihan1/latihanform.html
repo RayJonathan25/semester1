@@ -1,0 +1,90 @@
+<!DOCSTYPE html>
+	<html>
+		<head> 
+			<title>Latihan Form</title>
+		</head>
+		
+			<body>
+				<form>
+					<fieldset>
+					<legend>Data Diri</legend>
+					<br><br>
+					<label for="namapertama">Nama Pertama</label>
+					<br><br>
+					<input type="text" id="namapertama" name="Nama Pertama">
+					<br> <br>
+					<label for="namaterakhir">Nama Terakhir</label>
+					<br><br>
+					<input type="text" id="namaterakhir" name="Nama Terakhir">
+					<br> <br>
+					<label for="tanggalkelahiran">Tanggal Kelahiran</label>
+					<br><br>
+					<input type="date" id="tanggalkelahiran" name="Tanggal Kelahiran">
+					<br><br>
+					<label for="Email">Email</label>
+					<br><br>
+					<input type="email" id="Email" name="Email Daftar">
+					<br><br>
+					<label for="ukuransepatu"> Ukuran Sepatu</label>
+					<br><br>
+					<input type="number" id="ukuransepatu" name="Ukuran Sepatu">
+					<br><br>
+					<label for="kemampuandesignweb">Kemampuan Design Web (1 low - 100 max)</label>
+					<br>	
+					<input type="range" value="50" min="1" max="100" oninput="this.nextElementSibling.value = this.value" id="kemampuandesignweb">
+					<output>24</output>	
+					</fieldset>
+					
+					<fieldset>
+					<legend>Tempat Tinggal</legend>
+					<br><br>
+					<label for="tempattinggal">Tempat Tinggal</label>
+					<br>
+					<textarea name="tempattinggal" rows="10" cols="30">
+					</textarea>
+					<br><br>
+					<label for="kodepos">Kode Pos</label>
+					<br><br>
+					<input type="text" id="kodepos" name="kode pos">
+					<br><br>
+					<label for="negara">Negara</label>
+					<br><br>
+					<input type="text" id="negara" name="Negara">
+					</fieldset>
+					
+					<fieldset>
+					<legend>Detail Kartu Mahasiswa</legend>
+					<fieldset><legend>tipe kartu</legend>
+					<input type="radio" id="tipekartu" name="tipekartu1" value="Parkir">
+					<label for="tipekartu">Parkir</label>
+					<input type="radio" id="tipekartu" name="tipekartu2" value="Kantin">
+					<label for="tipekartu">Kantin</label>
+					<input type="radio" id="tipekartu" name="tipekartu3" value="Mahasiswa">
+					<label for="tipekartu">Mahasiswa</label>
+					</fieldset>
+					
+					<label for="Namayangdigunakan">Nama</label>
+					<br><br>
+					<input type="text" id="Namayangdigunakan" name="Nama yang akan digunakan">
+					<br><br>
+					<radio>Nama yang akan digunakan di kartu mahasiswa</radio>
+					<label for="NomorKartu">Nomor Kartu</label>
+					<br><br>
+					<input type="number" id="NomorKartu" name="Nomor kartu mahasiswa">
+					<br><br>
+					<label for="PasswordKartu">Password Kartu</label>
+					<br><br>
+					<input type="password" id="PasswordKartu" name="Password kartu mahasiswa">
+					<br><br>
+					<label for="bataswaktu">Batas Waktu</label>
+					<br><br>
+					<input type="datetime-local" id="Bataswaktu" name="Batas waktu">
+					</fieldset>
+					
+					<fieldset>
+					<input type="submit" value="Simpan Pesanan">
+					</fieldset>
+				</form>
+			</body>
+			
+	</html>

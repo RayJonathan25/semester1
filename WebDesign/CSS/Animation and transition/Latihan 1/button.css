@@ -1,0 +1,19 @@
+.rectangle {
+  height: 75px;
+  width: 120px;
+  color:white;
+  background-color: orange ;
+  border:outset 3px;
+  justify-content:center;
+  align-items: center;
+  display:flex;
+}
+
+.rectangle:hover{
+		height:50px;
+		width:100px;
+		background-color:blue;
+		justify-content:center;
+		align-items:center;
+		transition-timing-function:linear;
+}

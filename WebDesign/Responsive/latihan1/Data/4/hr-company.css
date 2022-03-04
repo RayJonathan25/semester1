@@ -1,0 +1,114 @@
+body {
+    background-color: #ccc;
+}
+
+.logo {
+    text-align: center;
+}
+
+#menu-icon {
+    display: none;
+    background-image: url(images/menu-icon.png);
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+}
+
+nav {
+    text-align: center;
+    padding: 10px 5px;
+    margin: 0;
+    background: #f6f6f6;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.hr-solution {
+    background-image: url(images/shv_sunrise_preview.jpg);
+    padding: 15%;
+    text-align: center;
+    background-size: cover;
+}
+
+.hr-solution .button a:first-child {
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.hr-solution .button a:last-child {
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(110, 177, 11);
+    padding: 10px;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+}
+
+.business {
+    display: flex;
+    justify-content: center;
+}
+
+.business article {
+    width: calc(100% / 3.5);
+    margin: 0 20px;
+}
+
+@media all and (max-width: 880px) {
+
+    nav:hover ul.top-list,
+    nav:hover li {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    .hr-solution .button a {
+        display: inline-block;
+    }
+
+    .business {
+        display: block;
+    }
+
+    .learn-more {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    .business article {
+        text-align: center;
+        width: 100%;
+    }
+
+    main h2 {
+        font-size: 1.4em;
+    }
+
+    .top-list {
+        display: none;
+        height: auto;
+    }
+
+    #menu-icon {
+        display: block;
+        background-image: url(images/menu-icon.png);
+    }
+}

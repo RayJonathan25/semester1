@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.js"
+      integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      li {
+        display: inline-block;
+        cursor: pointer;
+        padding: 10px;
+      }
+      .haha {
+        background-color: grey;
+      }
+      ul {
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Towns</h2>
+    <ul id="items">
+      <li>Sofia</li>
+      <li>Varna</li>
+      <li>Plovdiv</li>
+      <li>Bourgas</li>
+      <li>Rousse</li>
+    </ul>
+    <button id="showTownsButton">Show Towns</button>
+    <div id="selectedTowns"></div>
+    <script>
+      $('#items li').click(function () {
+        $(this).addClass('haha')
+        $(this).attr('selected', true)
+      })
+
+      $('#showTownsButton').click(function () {
+        let hasil = []
+        $('li[selected]').each((i, e) => {
+          hasil.push(e.textContent)3
+          $(e).removeClass('haha')
+          $(e).attr('selected', false)
+        })
+        $('#selectedTowns').html(hasil)
+      })
+    </script>
+  </body>
+</html>

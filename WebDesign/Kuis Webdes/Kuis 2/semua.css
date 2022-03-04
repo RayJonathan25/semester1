@@ -1,0 +1,17 @@
+body {
+            font-family: Georgia, Times New Roman, Times, serif;
+            margin: 20px 10px 10px 20px;
+        }
+.border{border-style:dotted;
+		border-radius: 10px;
+		border-color:red;
+		padding:10px;}
+
+h1 {
+	color:#399;
+  text-shadow: 2px 1px black;
+}
+
+h3{
+	color : #399;
+	}

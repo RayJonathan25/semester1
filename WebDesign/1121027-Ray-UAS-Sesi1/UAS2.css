@@ -1,0 +1,32 @@
+.Profile p {
+    font-size: 15px;
+    line-break: 10px;
+    margin: 0;
+}
+
+@import url('http://fonts.googleapis.com/css?family=Simonetta:400,900|Balthazar');
+
+img {
+    float: right;
+    border: 2px solid;
+}
+
+.nama {
+    font-size: 20px;
+}
+
+h2 {
+    text-decoration-line: underline;
+}
+
+body {
+    font-family: "Balthazar";
+}
+
+.skills {
+    display: inline-block;
+}
+
+ul {
+    list-style-image: url("Asset\Nomor 2\Image\bullet.jpg");
+}

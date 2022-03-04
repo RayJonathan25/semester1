@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.js"
+      integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <ul id="towns">
+      <li>Sofia</li>
+      <li>Pleven</li>
+      <li>Varna</li>
+      <li>Plovdiv</li>
+    </ul>
+    <input type="text" id="searchText" />
+    <button onclick="search()">Search</button>
+    <div id="result"></div>
+    <script>
+      function search() {
+        let huruf = $('#searchText').val()
+        $('#towns li').each((i, li) => {
+          if (huruf != '') {
+            if (li.textContent.toLocaleLowerCase().includes(huruf)) {
+              $(li).css('font-weight', 'bold')
+            } else {
+              $(li).css('font-weight', '')
+            }
+          }
+        })
+      }
+    </script>
+  </body>
+</html>
